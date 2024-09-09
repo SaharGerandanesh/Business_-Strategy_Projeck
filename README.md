@@ -1,36 +1,45 @@
-# Projeck_Age_Salary
-Affärsstrategi: Genom att förstå vilka demografiska grupper som är mest benägna att göra köp kan företag optimera sina resurser genom att fokusera marknadsföring och kampanjer på dessa segment. Detta kan leda till högre konverteringsgrader och bättre avkastning på investeringar.
-Variabler:
+# Project Type: Business Analytics and Machine Learning
 
-User ID: Unikt identifieringsnummer för varje användare.
-Gender: Kön på användaren (Male/Female).
-Age: Användarens ålder i år.
-EstimatedSalary: Användarens uppskattade årliga lön i lokal valuta.
-Purchased: Binar variabel som indikerar om användaren har gjort ett köp (1) eller inte (0).
-2. Exploratory Data Analysis (EDA)
-Fördelning av variabler
-Ålder: Medelåldern är 37,7 år, och fördelningen av ålder sträcker sig från 18 till 60 år. Det verkar finnas en spridning över hela arbetsåldern.
-EstimatedSalary: Medellönen i datasetet är 69 742,50, med en standardavvikelse på cirka 34 097. Lönerna varierar från 15 000 till 150 000, vilket indikerar en stor variation i ekonomiska förhållanden bland användarna.
-Könsfördelning: Detta dataset innehåller både manliga och kvinnliga användare, men kön är en kategorisk variabel och kräver specifik analys för att se om det finns skillnader i andra variabler baserat på kön.
-Relationer mellan variabler
-Korrelation mellan ålder och EstimatedSalary: Scatter plots kan användas för att undersöka om det finns något tydligt samband mellan ålder och lön. Inledningsvis verkar det som att det inte finns någon stark korrelation mellan dessa två variabler.
-Köpbeslut (Purchased) mot andra variabler: Genom att titta på hur variablerna Ålder och EstimatedSalary relaterar till köpbeslutet (Purchased), kan vi försöka identifiera om det finns vissa ålders- eller lönegrupper som är mer benägna att göra ett köp.
-3. Unsupervised Machine Learning
-K-means clustering:
 
-Syfte: Utföra klusteranalys för att se om det finns dolda grupper i data som kanske korrelerar med köpbeslutet (Purchased).
-Val av kluster: Vi kan börja med att använda 3-4 kluster för att se hur användarna kan grupperas baserat på ålder och EstimatedSalary.
-Resultat: Efter att ha kört K-means klustring kan vi undersöka om vissa kluster visar en högre frekvens av köpbeslut (Purchased = 1). Detta kan ge insikter i vilka demografiska grupper (baserat på ålder och inkomst) som är mest benägna att göra köp.
-4. Presentation av resultat
-Visualisering av EDA-resultat:
-Scatter Plots: Visualisera fördelningen av ålder och EstimatedSalary i relation till köpbeslutet.
-Box Plots: Undersök hur EstimatedSalary och Age varierar för de som har gjort ett köp (Purchased = 1) jämfört med de som inte har gjort ett köp.
-Klusteranalysens resultat:
-Kluster Visualisering: Scatter plot med klusterfärgning visar hur användarna grupperas. Vi kan också överlägga köpbeslutet för att se om vissa kluster har en högre andel köp.
-5. Databerättelse
-Denna analys visar hur vi kan identifiera potentiella kundsegment baserat på demografi och inkomstdata. Genom att använda K-means klustring kunde vi identifiera grupper av användare som har liknande ålder och EstimatedSalary. Resultaten antyder att vissa av dessa grupper har en högre sannolikhet att göra köp, vilket kan vara värdefullt för att rikta marknadsföring och erbjudanden.
+Business Strategy and Analysis
+Business Strategy: Understanding which demographic groups are most likely to make purchases allows companies to optimize their resources by focusing marketing and campaigns on these segments. This targeted approach can lead to higher conversion rates and better return on investment (ROI).
+
+Variables:
+
+User ID: Unique identifier for each user.
+Gender: User’s gender (Male/Female).
+Age: User’s age in years.
+EstimatedSalary: User’s estimated annual salary in local currency.
+Purchased: Binary variable indicating whether the user made a purchase (1) or not (0).
+Exploratory Data Analysis (EDA):
+
+Distribution of Variables:
+
+Age: The average age is 37.7 years, with a range from 18 to 60 years. There is a wide spread across the working age range.
+EstimatedSalary: The average salary in the dataset is 69,742.50, with a standard deviation of approximately 34,097. Salaries range from 15,000 to 150,000, indicating significant variation in economic conditions among users.
+Gender Distribution: The dataset includes both male and female users. Gender is a categorical variable requiring specific analysis to identify differences in other variables based on gender.
+Relationships Between Variables:
+
+Correlation Between Age and EstimatedSalary: Scatter plots can be used to investigate any clear relationship between age and salary. Initially, there appears to be no strong correlation between these two variables.
+Purchase Decision (Purchased) vs. Other Variables: By examining how Age and EstimatedSalary relate to the purchase decision (Purchased), we can identify whether certain age or income groups are more likely to make a purchase.
+Unsupervised Machine Learning:
+
+K-Means Clustering:
+Purpose: Perform clustering analysis to identify hidden groups in the data that may correlate with the purchase decision (Purchased).
+Cluster Selection: Start with 3-4 clusters to see how users group based on age and EstimatedSalary.
+Results: After running K-means clustering, examine if certain clusters show a higher frequency of purchase decisions (Purchased = 1). This can provide insights into demographic groups (based on age and income) that are more likely to make purchases.
+Presentation of Results:
+
+Visualization of EDA Results:
+Scatter Plots: Visualize the distribution of age and EstimatedSalary in relation to the purchase decision.
+Box Plots: Examine how EstimatedSalary and Age vary for those who made a purchase (Purchased = 1) compared to those who did not.
+Cluster Analysis Results:
+Cluster Visualization: Scatter plots with cluster coloring show how users are grouped. Overlay purchase decisions to see if certain clusters have a higher percentage of purchases.
+Data Narrative: This analysis demonstrates how identifying potential customer segments based on demographic and income data can provide valuable insights. Using K-means clustering, we identified groups of users with similar age and EstimatedSalary. Results suggest that some of these groups have a higher likelihood of making purchases, making them attractive targets for marketing efforts.
 
 Key Takeaways:
-Segmentering: Vi kunde identifiera grupper med liknande ålder och EstimatedSalary. En av dessa grupper kan ha en högre sannolikhet att köpa, vilket gör dem till ett attraktivt mål för marknadsföringsinsatser.
-Affärsstrategi: Genom att förstå vilka demografiska grupper som är mest benägna att göra köp kan företag optimera sina resurser genom att fokusera marknadsföring och kampanjer på dessa segment. Detta kan leda till högre konverteringsgrader och bättre avkastning på investeringar.
-Affärsnytta: Denna typ av analys kan hjälpa företag att bättre förstå sina kundbaser, identifiera nya marknadsmöjligheter och förbättra precisionen i sina marknadsföringskampanjer, vilket slutligen kan leda till ökad försäljning och kundnöjdhet.
+
+Segmentation: Identified groups with similar age and EstimatedSalary. One or more of these groups may have a higher likelihood of purchasing, making them ideal targets for marketing.
+Business Strategy: Understanding which demographic groups are most inclined to make purchases allows businesses to focus marketing and campaigns on these segments, leading to higher conversion rates and better ROI.
+Business Benefit: This type of analysis helps companies better understand their customer base, identify new market opportunities, and improve the precision of their marketing campaigns, ultimately leading to increased sales and customer satisfaction.
+
